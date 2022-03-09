@@ -1,5 +1,5 @@
 # SkyroomCustomize
-A extension written for customizing skyroom.
+An extension written for customizing skyroom.
 
 # Installation
 First goto extensions page and enable developer mode.
