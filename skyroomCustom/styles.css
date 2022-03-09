@@ -53,6 +53,7 @@ header.row.centered.box-shrink
     background: #243b57 !important;
     border-bottom: none !important;
     border-radius: 0 0 13px 13px;
+    z-index: 4 !important;
 }
 .box-shrink.row.row-start.language
 {
