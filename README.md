@@ -15,3 +15,5 @@ You can fork this repo and change any part you want!
 
 # Note
 There is no support for english. Expect bugs if you are using english mode in skyroom.
+
+If you like this extension, please give a star :)
