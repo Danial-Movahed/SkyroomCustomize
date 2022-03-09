@@ -94,8 +94,8 @@ setInterval(function(){
     replace(document.getElementsByClassName("col box block users")[0], new RegExp("90527 محمدامین قلی پور", "g"), "CodeNameZig");
     replace(document.getElementsByClassName("col box-grow message-box")[0], new RegExp("90306 محمدمهدی الهیان", "g"), "داوود خدادوست");
     replace(document.getElementsByClassName("col box block users")[0], new RegExp("90306 محمدمهدی الهیان", "g"), "داوود خدادوست");
-    replace(document.getElementsByClassName("col box-grow message-box")[0], new RegExp("90308 محمدمتین براتی", "g"), "نور دل پارسایان");
-    replace(document.getElementsByClassName("col box block users")[0], new RegExp("90308 محمدمتین براتی", "g"), "نور دل پارسایان");
+    replace(document.getElementsByClassName("col box-grow message-box")[0], new RegExp("90308 محمدمتین براتی", "g"), "افزایش‌گر سطح علمی");
+    replace(document.getElementsByClassName("col box block users")[0], new RegExp("90308 محمدمتین براتی", "g"), "افزایش‌گر سطح علمی");
     replace(document.getElementsByClassName("col box-grow message-box")[0], new RegExp("90327 حسین کاظمی", "g"), "دکتر");
     replace(document.getElementsByClassName("col box block users")[0], new RegExp("90327 حسین کاظمی", "g"), "دکتر");
 
