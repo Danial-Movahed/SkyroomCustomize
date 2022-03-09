@@ -98,6 +98,8 @@ setInterval(function(){
     replace(document.getElementsByClassName("col box block users")[0], new RegExp("90308 محمدمتین براتی", "g"), "افزایش‌گر سطح علمی");
     replace(document.getElementsByClassName("col box-grow message-box")[0], new RegExp("90327 حسین کاظمی", "g"), "دکتر");
     replace(document.getElementsByClassName("col box block users")[0], new RegExp("90327 حسین کاظمی", "g"), "دکتر");
+    replace(document.getElementsByClassName("col box-grow message-box")[0], new RegExp("90323 کسری عصارزاده", "g"), "پدر میکی موس");
+    replace(document.getElementsByClassName("col box block users")[0], new RegExp("90323 کسری عصارزاده", "g"), "پدر میکی موس");
 
     
 
