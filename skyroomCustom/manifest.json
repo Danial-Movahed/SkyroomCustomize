@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Skyroom customiziation",
+  "version": "0.1.0",
+  "description": "Skyroom customiziation",
+  "content_scripts": [{
+    "css": ["styles.css"],
+    "js": ["jquery-1.10.2.js","jquery-ui.js","script.js"],
+    "matches": ["https://www.skyroom.online/*"]
+  }]
+}

@@ -1,0 +1,161 @@
+.col.box
+{
+    border-radius: 13px;
+}
+.input.box-grow.message-box-wrapper
+{
+    border-radius: 13px;
+}
+.box-grow-zero.col.col-center.login-page
+{
+    background-size: cover;
+}
+.board.box.col, .components, .emoji-list
+{
+    background-color: #243b57 !important;
+}
+.preview-box, .quoted-message
+{
+    background-color: #305e97 !important;
+}
+:root
+{
+    --bg-color: #1d222a !important;
+}
+.trademark
+{
+    display: none;
+}
+#workspace
+{
+    flex-direction: column-reverse;
+}
+
+.box-shrink.row.room-nav
+{
+    justify-content: flex-start !important;
+    flex-direction: row-reverse !important;
+    background-color: #243b57 !important;
+    border-radius: 13px !important;
+    overflow: hidden;
+}
+.entry, .input, input, select, textarea
+{
+    background-color: #1d222a !important;
+    border: none !important;
+}
+.row.editor-wrapper
+{
+    background-color: #1d222a !important;
+}
+header.row.centered.box-shrink
+{
+    background: #243b57 !important;
+    border-bottom: none !important;
+    border-radius: 0 0 13px 13px;
+}
+.box-shrink.row.row-start.language
+{
+    background-color: transparent;
+}
+.dialog
+{
+    background-color: #243b57 !important;
+}
+.block
+{
+    background-color: #243b57 !important;
+    border: none !important;
+}
+.menu-items.app-menu, .menu-items
+{
+    background-color: #243b57 !important;
+    border-color: #243b57 !important;
+    border-radius: 10px;
+    box-shadow: none !important;
+}
+.menu-items li
+{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.menu-items li:hover {
+    background-color: #314a69 !important;
+}
+.room-nav .dropdown .dropdown-toggle:hover {
+    border: 1px solid lightgray;
+}
+.clockMain
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    direction: ltr;
+}
+.toggle-btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dropCustom
+{
+    height: 100% !important;
+    margin-left: 10px !important;
+}
+
+.chat-msg, .message-commands
+{
+    background-color: #243b57 !important;
+}
+
+.tuxgroup
+{
+    position: relative;
+    height: 35px;
+    width: 24px;
+    fill: white;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.rtl .menu-items li .icon
+{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.rtl .menu-items li .checked-icon
+{
+    right: 5px;
+}
+.icon.small.sub-menu-arrow
+{
+    transform: rotate(180deg);
+    margin-left: auto !important;
+}
+.btn.btn-flat.action-btn.mic, .btn.btn-flat.action-btn.webcam, .btn.btn-flat.action-btn.desktop, .btn.btn-flat.action-btn.action-board, .btn.btn-flat.action-btn.raised-hand
+{
+    background-color: #1d222a !important;
+}
+body
+{
+    overflow: hidden;
+}
+.col.box.block.users, .col.box.block.chat, .sidebar
+{
+    z-index: 3;
+}
+.box-shrink.row.room-nav
+{
+    z-index: 4;
+}
+.edit, .pin, .mute, .delete
+{
+    display: flex !important;
+}
+.pinned-message
+{
+    background-color: #243b57 !important;
+}
