@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Skyroom customiziation",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "Skyroom customiziation (no rename)",
   "update_url": "https://raw.githubusercontent.com/Danial-Movahed/SkyroomCustomize/main/updates-norename.xml",
   "content_scripts": [{

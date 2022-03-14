@@ -73,7 +73,7 @@ $(".dropdown-toggle").removeClass("dropdown-toggle");
 
 function checkTagging(mySelf)
 {
-    var allMessage = document.getElementsByClassName("chat-msg my-chat-msg delivered ltr-text");
+    var allMessage = document.getElementsByClassName("chat-msg");
     for(var i = 0 ; i < allMessage.length; i++)
     {
         if(allMessage[i].innerText.includes("@" + mySelf) || allMessage[i].innerText.includes("@everyone") || allMessage[i].innerText.includes("@here"))
