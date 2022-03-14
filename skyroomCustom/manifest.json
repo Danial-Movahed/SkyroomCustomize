@@ -3,6 +3,7 @@
   "name": "Skyroom customiziation",
   "version": "1.4.0",
   "description": "Skyroom customiziation",
+  "update_url": "https://raw.githubusercontent.com/Danial-Movahed/SkyroomCustomize/main/updates.xml",
   "content_scripts": [{
     "css": ["styles.css"],
     "js": ["jquery-1.10.2.js","jquery-ui.js","script.js"],
