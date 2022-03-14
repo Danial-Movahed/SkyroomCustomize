@@ -81,6 +81,19 @@ function replace(element, from, to) {
     }
 };
 
+function checkTagging(mySelf)
+{
+    var allMessage = document.getElementsByClassName("chat-msg my-chat-msg delivered ltr-text");
+    for(var i = 0 ; i < allMessage.length; i++)
+    {
+        if(allMessage[i].innerText.includes("@" + mySelf) || allMessage[i].innerText.includes("@everyone") || allMessage[i].innerText.includes("@here"))
+        {
+            allMessage[i].style.setProperty("background-color", "rgb(0,135,0)", "important");
+            allMessage[i].getElementsByClassName("message-commands")[0].style.setProperty("background-color", "rgb(0,135,0)", "important");
+        }
+    }
+};
+
 setInterval(function(){
     replace(document.getElementsByClassName("col box-grow message-box")[0], new RegExp("90333 امیرحسین یوسفی", "g"), "سلطان یوسفی");
     replace(document.getElementsByClassName("col box block users")[0], new RegExp("90333 امیرحسین یوسفی", "g"), "سلطان یوسفی");
@@ -92,8 +105,8 @@ setInterval(function(){
     replace(document.getElementsByClassName("col box block users")[0], new RegExp("90515 ارشیا راسفجانی", "g"), "مدرسان شریف");
     replace(document.getElementsByClassName("col box-grow message-box")[0], new RegExp("90527 محمدامین قلی پور", "g"), "CodeNameZig");
     replace(document.getElementsByClassName("col box block users")[0], new RegExp("90527 محمدامین قلی پور", "g"), "CodeNameZig");
-    replace(document.getElementsByClassName("col box-grow message-box")[0], new RegExp("90306 محمدمهدی الهیان", "g"), "داوود خدادوست");
-    replace(document.getElementsByClassName("col box block users")[0], new RegExp("90306 محمدمهدی الهیان", "g"), "داوود خدادوست");
+    replace(document.getElementsByClassName("col box-grow message-box")[0], new RegExp("90306 محمدمهدی الهیان", "g"), "احمد");
+    replace(document.getElementsByClassName("col box block users")[0], new RegExp("90306 محمدمهدی الهیان", "g"), "احمد");
     replace(document.getElementsByClassName("col box-grow message-box")[0], new RegExp("90308 محمدمتین براتی", "g"), "افزایش‌گر سطح علمی");
     replace(document.getElementsByClassName("col box block users")[0], new RegExp("90308 محمدمتین براتی", "g"), "افزایش‌گر سطح علمی");
     replace(document.getElementsByClassName("col box-grow message-box")[0], new RegExp("90327 حسین کاظمی", "g"), "دکتر");
@@ -101,9 +114,8 @@ setInterval(function(){
     replace(document.getElementsByClassName("col box-grow message-box")[0], new RegExp("90323 کسری عصارزاده", "g"), "پدر میکی موس");
     replace(document.getElementsByClassName("col box block users")[0], new RegExp("90323 کسری عصارزاده", "g"), "پدر میکی موس");
 
-    
-
     var users = document.getElementsByClassName("row user-row");
+    var self;
     for (var i = 0; i < users.length; i++)
     {
         var divs = users.item(i).getElementsByTagName("div")
@@ -113,7 +125,8 @@ setInterval(function(){
         }
         if(users.item(i).classList.contains("my-user"))
         {
-            if(users.item(i).getElementsByClassName("user-nickname")[0].innerHTML == "90306 محمدمهدی الهیان" && div.innerText == "11:11:11")
+            self = users.item(i).getElementsByClassName("user-nickname")[0].innerHTML;
+            if(users.item(i).getElementsByClassName("user-nickname")[0].innerHTML == "احمد" && div.innerText == "11:11:11")
             {
                 console.log("11:11!");
                 document.getElementsByClassName("input box")[0].innerHTML="11:11:11";
@@ -121,4 +134,6 @@ setInterval(function(){
             }
         }
     }
+    checkTagging(self);
+
 }, 1000);
