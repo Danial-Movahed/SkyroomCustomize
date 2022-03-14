@@ -69,20 +69,24 @@ function currentTime()
 currentTime();
 $(".dropdown-toggle").addClass("dropCustom");
 $(".dropdown-toggle").removeClass("dropdown-toggle");
-function replace(element, from, to) {
-    if (element.childNodes.length) {
-        element.childNodes.forEach(child => replace(child, from, to));
-    } else {
-        const cont = element.textContent;
-        if (cont)
+
+
+function checkTagging(mySelf)
+{
+    var allMessage = document.getElementsByClassName("chat-msg my-chat-msg delivered ltr-text");
+    for(var i = 0 ; i < allMessage.length; i++)
+    {
+        if(allMessage[i].innerText.includes("@" + mySelf) || allMessage[i].innerText.includes("@everyone") || allMessage[i].innerText.includes("@here"))
         {
-            element.textContent = cont.replace(from, to);
+            allMessage[i].style.setProperty("background-color", "rgb(0,135,0)", "important");
+            allMessage[i].getElementsByClassName("message-commands")[0].style.setProperty("background-color", "rgb(0,135,0)", "important");
         }
     }
 };
 
 setInterval(function(){
     var users = document.getElementsByClassName("row user-row");
+    var self;
     for (var i = 0; i < users.length; i++)
     {
         var divs = users.item(i).getElementsByTagName("div")
@@ -92,7 +96,8 @@ setInterval(function(){
         }
         if(users.item(i).classList.contains("my-user"))
         {
-            if(users.item(i).getElementsByClassName("user-nickname")[0].innerHTML == "90306 محمدمهدی الهیان" && div.innerText == "11:11:11")
+            self = users.item(i).getElementsByClassName("user-nickname")[0].innerHTML;
+            if(users.item(i).getElementsByClassName("user-nickname")[0].innerHTML == "احمد" && div.innerText == "11:11:11")
             {
                 console.log("11:11!");
                 document.getElementsByClassName("input box")[0].innerHTML="11:11:11";
@@ -100,4 +105,6 @@ setInterval(function(){
             }
         }
     }
+    checkTagging(self);
+
 }, 1000);
