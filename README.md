@@ -24,6 +24,8 @@ To update, you can just close your browser and open it again. Or you can click u
 
 
 # Note
+If you get an error about not installing from chrome webstore, run the fixreg.reg file.
+
 There is no support for english. Expect bugs if you are using english mode in skyroom.
 
 If you like this extension, please give a star :)
