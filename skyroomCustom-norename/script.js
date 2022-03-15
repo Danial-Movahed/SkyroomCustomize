@@ -78,6 +78,9 @@ function checkTagging(mySelf)
     {
         if(allMessage[i].innerText.includes("@" + mySelf) || allMessage[i].innerText.includes("@everyone") || allMessage[i].innerText.includes("@here"))
         {
+            if(allMessage[i].getElementsByClassName("quoted-message")[0] != null)
+                if(allMessage[i].getElementsByClassName("quoted-message")[0].innerText.includes("@" + mySelf) || allMessage[i].getElementsByClassName("quoted-message")[0].innerText.includes("@everyone") || allMessage[i].getElementsByClassName("quoted-message")[0].innerText.includes("@here"))
+                    continue;
             allMessage[i].style.setProperty("background-color", "rgb(0,135,0)", "important");
             allMessage[i].getElementsByClassName("message-commands")[0].style.setProperty("background-color", "rgb(0,135,0)", "important");
         }
