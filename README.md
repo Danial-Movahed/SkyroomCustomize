@@ -18,6 +18,11 @@ Enjoy :)
 # Customization
 You can fork this repo and change any part you want!
 
+# Updating
+To update, you can just close your browser and open it again. Or you can click update in extensions page.
+![image](https://user-images.githubusercontent.com/75257508/158329958-c1c799a3-c25a-4b31-bd86-c44a47c735c0.png)
+
+
 # Note
 There is no support for english. Expect bugs if you are using english mode in skyroom.
 
