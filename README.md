@@ -24,7 +24,7 @@ To update, you can just close your browser and open it again. Or you can click u
 
 
 # Note
-If you get an error about not installing from chrome webstore, run the fixreg.reg file.
+If you get an error about not installing from chrome webstore, you can either install from source code zip, or you can build it the extension with key.perm yourself.
 
 There is no support for english. Expect bugs if you are using english mode in skyroom.
 
